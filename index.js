@@ -22,7 +22,7 @@ function navigateToPage(page) {
         $page = $pages.filter("[data-page='not-found']");
 
     $page.show();
-    updateUrl("detail/" + page);
+    updateUrl("/" + page);
 }
 
 $(function () {
