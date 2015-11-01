@@ -1,11 +1,11 @@
 // JavaScript source code
 
 function updateUrl(url) {
-    if ('history' in window) {
-        window.history.pushState(url, url, url);
-    } else {
-        window.location.hash = url;
-    }
+    //if ('history' in window) {
+    //    window.history.pushState(url, url, url);
+    //} else {
+    window.location.hash = url;
+    //}
 }
 
 var $pages;
@@ -35,6 +35,10 @@ $(function () {
         navigateToPage($this.attr('href'));
     });
 
-    navigateToPage('chromium-updater');
+    var page = window.location.hash;
+    if (page == null || page == '')
+        page = 'chromium-updater';
+
+    navigateToPage(page);
 
 });
