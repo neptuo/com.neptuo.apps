@@ -1,26 +1,525 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Apps by maraf</title>
-  </head>
-  <body>
-  	<ul>
-  		<li>
-  			Windows
-  			<ul>
-  				<li><a href="chromium-updater">Chromium Updater</a></li>
-  				<li><a href="solution-runner">(Visual Studio) Solution Runner</a></li>
-  				<li><a href="winrun">WinRun</a></li>
-  			</ul>
-  		</li>
-  		<li>
-  			Android
-  			<ul>
-  				<li><a href="https://github.com/maraf/vocabularyapp/releases/download/v1.1.0/neptuo-vocabularyapp-v1.1.0.apk">Vocabulary</a></li>
-  			</ul>
-  		</li>
-  	</ul>
-  </body>
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>
+        <span class="left">Apps</span>
+        <span class="separator">.</span>
+        <span class="content">Neptuo.com</span>
+    </h1>
+
+    <div class="container">
+        <div class="left">
+            <menu>
+                <ul>
+                    <li>
+                        Windows
+                        <ul>
+                            <li><a class="menu-item" href="chromium-updater">Chromium Updater</a></li>
+                            <li><a class="menu-item" href="solution-runner">Solution Runner</a></li>
+                            <li><a class="menu-item" href="windows-dock">WindowsDock</a></li>
+                            <li><a class="menu-item" href="winrun">WinRun</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Android
+                        <ul>
+                            <li><a class="menu-item" href="vocabulary">Vocabulary</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </menu>
+        </div>
+        <div class="content">
+
+            <article data-page="chromium-updater">
+                <h2>Chromium Updater</h2>
+
+                <div class="image-list">
+                    <img src="images/chromium-updater-01.png" />
+                    <img src="images/chromium-updater-02.png" />
+                    <img src="images/chromium-updater-03.png" />
+                    <img src="images/chromium-updater-04.png" />
+                </div>
+
+                <p>
+                    Chromium updater is Click-once application for downloading and updating latest builds of Chromium.
+                    The application offers automatic or manual download of latest build to selected folder and then extracting it there.
+                </p>
+
+                <h3>Configuration</h3>
+                <p>
+                    On first run, configuration tab is opened. The application requires folder for downloading zips to and this folder is prefilled with the application instalation folder.
+                    This can be quite problem, if the application installed to folder, where current user doesn't have write rights. So be sure to fill folder with write rights.
+                </p>
+                <p>
+                    Beside this, there are prefilled download URL and file name. These must match structure of Chromium builds structure on the server. 
+                    This is recommended to not change...
+                </p>
+                <p>
+                    In the bottom there are some checkboxes for setting automatic downloads and etc. These should match most user preferences.
+                </p>
+
+                <h3>Download</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="chromium-updater">Download click-once installer of Chromium Updater</a>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>Version history</h3>
+                <ul class="version">
+                    <li>
+                        v1.0.2
+                        <ul>
+                            <li>Async file extraction (no UI blocking).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        v1.0.1
+                        <ul>
+                            <li>Added support for autorun (after user login).</li>
+                            <li>Minor issues fixed</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </article>
+
+            <article data-page="vocabulary">
+                <h2>Vocabulary App</h2>
+
+                <div class="image-list">
+                    <img src="images/vocabulary-app-01.png" />
+                    <img src="images/vocabulary-app-02.png" />
+                    <img src="images/vocabulary-app-04.png" />
+                    <img src="images/vocabulary-app-05.png" />
+                </div>
+
+                <p>
+                    Android application for testing your vocabulary. User can download vocabularies from our API and browse and test phrases placed in it. 
+                    Vocabularies are splitted into files, so user can download only selected parts of vocabulary. Vocabulary definitions are in testing phase right now, but the client application is fully functional. 
+                    For more information and .apk file check our <a href="https://github.com/maraf/vocabularyapp/releases">release page at GitHub</a>.
+                </p>
+
+                <h3>Download</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/maraf/vocabularyapp/releases/download/v1.2.0/neptuo-vocabularyapp-v1.2.0.apk">Download .apk android package of Vocabulary App.</a>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>Version history</h3>
+                <ul class="version">
+                    <li>
+                        v1.2.0
+                        <ul>
+                            <li>Extended duplicity check to show duplicated items.</li>
+                            <li>Selection of difficulty group in phrases translation.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        v1.1.0
+                        <ul>
+                            <li>Add support for tagging phrases.</li>
+                            <li>Add base duplicity checks.</li>
+                            <li>Fix translating when only one phrase is in the session.</li>
+                            <li>Posibility to entry phrase after giving up.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        v1.0.0
+                        <ul>
+                            <li>Downloading XML vocabularies from API v1.</li>
+                            <li>Local caching of downloaded data.</li>
+                            <li>Local storage for user statistics.</li>
+                            <li>Browsing downloaded/local vocabularies (with filtering and sorting).</li>
+                            <li>Translating word.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article data-page="winrun">
+                <h2>WinRun</h2>
+                <p>
+                    Simple utility application with (missing) Windows tweaks.
+                </p>
+
+                <ul>
+                    <li>Large windows clock.</li>
+                    <li>Simply open network adapter configuration page.</li>
+                    <li>Turn off monitor.</li>
+                    <li>Lock workstation and turn off monitor.</li>
+                    <li>Put computer to sleep.</li>
+                    <li>Make all windows sticky.</li>
+                </ul>
+
+                <p>
+                    About sticking windows, when you drop window near other window, the dropped window will stick the other window.
+                    Some for resizing, when resizing window and stopped near other window, the resized window will resize to the other window.
+                </p>
+
+                <h3>Hotkeys:</h3>
+                <ul>
+                    <li>
+                        <strong>Win+F3</strong> to turn the monitor off.
+                    </li>
+                    <li>
+                        <strong>Win+F4</strong> to put the computer to sleep.
+                    </li>
+                    <li>
+                        <strong>Win+F5</strong> to open Network Adapter window.
+                    </li>
+                    <li>
+                        <strong>Win+F6</strong> to open large clock.
+                    </li>
+                    <li>
+                        <strong>Win+Shift+F6</strong> to open medium clock.
+                    </li>
+                    <li>
+                        <strong>Win+F12</strong> to put the computer to hibernation.
+                    </li>
+                    <li>
+                        <strong>Win+Shift+L</strong> to turn the monitor off and lock the computer.
+                    </li>
+                    <li>
+                        Drag and drop or resize any window near other window stick the window to the other.
+                    </li>
+                </ul>
+
+                <h3>Download</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="winrun">Download click-once installer of WinRun</a>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>Version history</h3>
+                <ul class="version">
+                    <li>
+                        v1.6.0
+                        <ul>
+                            <li>Sticky Windows.</li>
+                            <li>Internal reimplementation of features.</li>
+                            <li>Fix medium clock Windows wide shotcut.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        v1.5.0
+                        <ul>
+                            <li>Add medium clock.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        v1.4.1
+                        <ul>
+                            <li>Fix clock window padding.</li>
+                            <li>Fix clock position saving.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        v1.4.0
+                        <ul>
+                            <li>Add large clock window.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        v1.3.0
+                        <ul>
+                            <li>Add hibernation global hotkey.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        v1.2.0
+                        <ul>
+                            <li>Add lock workstation global hotkey.</li>
+                            <li>Add Network Adapter window global hotkey.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article data-page="solution-runner">
+                <h2>(Visual Studio) Solution runner (a part of Productivity pack)</h2>
+                <div class="image-list">
+                    <img src="images/solution-runner-01.png" />
+                    <img src="images/solution-runner-03.png" />
+                    <img src="images/solution-runner-02.png" />
+                </div>
+
+                <p>
+                    Keyboard only designed application for simple and fast open of Visual Studio solution files.
+                    Configuration takes single folder where to look for *.sln files, has the option to set prefered Visual Studio version 
+                    and global (Windows wide) shortcut.
+                </p>
+                <p>
+                    After setting required configuration, main window will open. Here you can filter solution files from your harddrive and manage favourite ones.
+                    By pressing enter, you run new a instance of selected version of Visual Studio with the selected solution.
+                </p>
+
+                <h3>Download</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="solution-runner">Download click-once installer of Productivity.SolutionRunner</a>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>Version history</h3>
+                <ul class="version">
+                    <li>
+                        v1.0.0
+                        <ul>
+                            <li>Favourite solution list.</li>
+                            <li>Global hotkey.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article data-page="windows-dock">
+                <h2>WindowsDock</h2>
+
+                <img class="image" src="images/windows-dock-01.jpg" />
+                <div class="image-list">
+                    <img src="images/windows-dock-02.png" />
+                    <img src="images/windows-dock-03.png" />
+                    <img src="images/windows-dock-04.png" />
+                    <img src="images/windows-dock-05.png" />
+                </div>
+
+                <p>
+                    WindowsDock is OSX-like application launcher. It has many layout and keyboard configurations to suit most users needs.
+                    Beside application shortcuts, dock can host user notes with alarms, simple directory and desktop browser and custom command line scripts.
+                </p>
+
+                <h3>Download</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/maraf/WindowsDock/releases/tag/v1.2.22">Download installer of WindowsDock</a>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>Version history</h3>
+                <ul class="version">
+                    <li>
+                        v1.2.22
+                        <ul>
+                            <li>Minor fix (that ugly border around shortcut on main panel vanished).</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.2.21
+                        <ul>
+                            <li>Global hotkeys for shortcuts (for only in combination with Windows key).</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.1.20
+                        <ul>
+                            <li>Configuration for small bubbles on top of shortcuts on main panel.</li>
+                            <li>Basic setting for shortcut icon size.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.19
+                        <ul>
+                            <li>Taskbar height + posibility to use this as offset from bottom.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.18
+                        <ul>
+                            <li>Dockable WindowsDock, you can dock main panel to one edge of screen and make it always visible.</li>
+                            <li>Some minor fixes.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.17
+                        <ul>
+                            <li>Colors for application buttons (Config+Close).</li>
+                            <li>Posibility to hide them from main panel.</li>
+                            <li>Context menu on main panel as substitute from these buttons.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.16
+                        <ul>
+                            <li>KeyShortcut to show desktop in Explorer.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.15
+                        <ul>
+                            <li>Added support for pin to right and bottom edge of primary screen.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.14
+                        <ul>
+                            <li>Posibility to configure activation key (Win+selected key).</li>
+                            <li>App restart after locale change nearly not needed (with exception for some resources - like datetime pattern).</li>
+                            <li>Partial internal configuration changes.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.13
+                        <ul>
+                            <li>FIXED: Program doesn't crash when one instance is running and you try to run another (caused by binding global hotkey).</li>
+                            <li>Minor internal changes.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.12
+                        <ul>
+                            <li>Translated items in configuration dropdown lists.</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        v1.0.11
+                        <ul>
+                            <li>FIXED: Restart not needed after position change (left,top).</li>
+                            <li>Minor configuration changes.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.10
+                        <ul>
+                            <li>Add support for setuping border, thickness and color.</li>
+                            <li>Border radius can also be set from configuration window.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.9
+                        <ul>
+                            <li>Added possibility to change (or disable) application hotkeys (Win+W remains as application activation key, but yout can change T,S,B,D,X and Z keys to run extensions and etc.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.8
+                        <ul>
+                            <li>Added possibility to place dock on left edge of primary screen.
+                            <li>Added window align to screen edge + offset setup.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.7
+                        <ul>
+                            <li>
+                                Add support for localization, right now we support Czech and English, but you can easily add support for another language, 
+                                simply open application installation folder, go to Resources a then copy one of files there and name it 'Resources' + underscore + language (and country) code, 
+                                like 'Resources_cs.txt' or 'Resources_fr-FR.txt'. If you do so, please send to me localized file and will add it to the application.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.6
+                        <ul>
+                            <li>Space added as posible key to shortcut assignment.</li>
+                            <li>Some minor fixes.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.5
+                        <ul>
+                            <li>Fix of show/hide bug</li>
+                            <li>Removed opacity (use alpha channel in background color</li>
+                            <li>After start "autohide"</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.3
+                        <ul>
+                            <li>
+                                Hotkeys in Shortcuts edit
+                                <ul>
+                                    <li>ENTER for opening shortcut detail (also DOUBLECLICK works).</li>
+                                    <li>DELETE for deleting shortcut.</li>
+                                    <li>SHIFT+UP/DOWN for moving shortcut.</li>
+                                    <li>Working directory can be set for shortcut+script (defaults to file directory).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        v1.0.0
+                        <ul>
+                            <li>
+                                Hotkeys
+                                <ul>
+                                    <li>Dock can be activated pressing Win+W.</li>
+                                    <li>Each shortcut can have hotkey (letters+num) to run that shortcut.</li>
+                                    <li>Shortcuts can share same hotkey to run multiple programs pressing single key.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Extensions shortcuts
+                                <ul>
+                                    <li>Browser - B</li>
+                                    <li>Desktop - D</li>
+                                    <li>Scripts - S</li>
+                                    <li>Textnotes - T</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Configuration
+                                <ul>
+                                    <li>Buttons for manual saving/loading configuration.</li>
+                                    <li>Button for replacing current configuration.</li>
+                                    <li>Button for copying current configuration file.</li>
+                                    <li>HiddenOffset - number of pixels that are always visible to top of display.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Not found error page -->
+            <article data-page="not-found" style="display: none;">
+                <p>Ooops!</p>
+                <p>
+                    You have found a page, that we do not have anymore (or did not ever have)...
+                </p>
+            </article>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
 </html>

@@ -1,0 +1,176 @@
+/* ----- LAYOUT -------------------------------------------------------------------------------- */
+
+body {
+    font-family: Verdana;
+    color: white;
+
+    margin: 0;
+    background: #1E1E1E;
+}
+
+h1 {
+    margin: 0;
+    text-transform: uppercase;
+
+    color: #3F3F46;
+    font-size: 65px;
+}
+
+h1 .left, 
+h1 .content, 
+h1 .separator {
+    display: block;
+    float: left;
+    margin: 0;
+    padding-top: 20px;
+    border-bottom: 5px solid #3683D3;
+}
+
+div.left, 
+div.content, 
+div.separator {
+    float: left;
+}
+
+.left {
+    text-align: right;
+}
+
+.separator {
+    width: 22px;
+    color: #3683D3;
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 890px) {
+    .left {
+        width: 300px;
+    }
+
+    .content {
+        width: 590px;
+    }
+
+    div.content {
+        padding-left: 22px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .content {
+        width: 690px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .content {
+        width: 790px;
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    .content {
+        width: 900px;
+    }
+}
+
+
+menu ul {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+menu ul ul {
+    margin: 0;
+}
+
+menu li {
+    list-style: none;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+}
+
+menu li li {
+    margin: 0;
+}
+
+menu a {
+    color: #3F3F46;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+menu a:hover, a.active {
+    color: #3683D3;
+}
+
+/* ----- CONTENT ------------------------------------------------------------------------------- */
+
+article p {
+    color: #eeeeee;
+    font-size: 16px;
+    text-align: justify;
+
+    margin-right: 20px;
+}
+
+article h2 {
+    color: #3F3F46;
+    font-size: 35px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+article h3 {
+    color: #3683D3;
+    font-size: 25px;
+    font-weight: normal;
+
+    margin: 0;
+}
+
+article img.image {
+    margin: 10px auto;
+    display: block;
+}
+
+article .image-list {
+    margin: 10px auto;
+}
+
+article .image-list img {
+    width: 200px;
+    margin: 10px;
+}
+
+article ul.version {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+article ul.version ul {
+    list-style-type: disc;
+}
+
+article ul.version li {
+    margin: 20px 0;
+}
+
+article ul.version li li {
+    margin: 0;
+}
+
+article a {
+    color: #eeeeee;
+}
+
+@media screen and (min-width: 890px) {
+    article h2:first-child {
+        display: none;
+    }
+}
