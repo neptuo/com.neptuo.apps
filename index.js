@@ -39,6 +39,11 @@ $(function () {
     if (page == null || page == '')
         page = 'chromium-updater';
 
-    navigateToPage(page);
+    if (page[0] == '#')
+        page = page.substr(1, page.length);
 
+    if (page[0] == '/')
+        page = page.substring(1, page.length);
+
+    navigateToPage(page);
 });
