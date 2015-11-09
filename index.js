@@ -27,9 +27,19 @@ function navigateToPage(page) {
 
 $(function () {
 
+    $menu = $("menu");
+    $hamburger = $(".hamburger").click(function (e) {
+        e.preventDefault();
+        $menu.toggle();
+    });
+
     $pages = $("[data-page]");
     $links = $(".menu-item").click(function (e) {
         e.preventDefault();
+
+        if ($hamburger.is(":visible")) {
+            $menu.hide();
+        }
 
         $this = $(this);
         navigateToPage($this.attr('href'));

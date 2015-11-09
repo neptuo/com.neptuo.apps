@@ -1,5 +1,9 @@
 /* ----- LAYOUT -------------------------------------------------------------------------------- */
 
+.clear {
+    clear: both;
+}
+
 body {
     font-family: Verdana;
     color: white;
@@ -14,6 +18,7 @@ h1 {
 
     color: #3F3F46;
     font-size: 65px;
+    border-bottom: 5px solid #3683D3;
 }
 
 h1 .left, 
@@ -23,7 +28,6 @@ h1 .separator {
     float: left;
     margin: 0;
     padding-top: 20px;
-    border-bottom: 5px solid #3683D3;
 }
 
 div.left, 
@@ -45,9 +49,106 @@ div.separator {
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 890px) {
+menu {
+    padding: 0;
+}
+
+@media screen and (max-width: 890px) {
+    .hamburger {
+        position: absolute;
+        top: 37px;
+        left: 5px;
+        width: 56px;
+        height: 42px;
+        padding-top: 7px;
+
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        margin: 0px 7px 7px 7px;
+        height: 7px;
+        background: #3683D3;
+    }
+
     .left {
-        width: 300px;
+        width: 260px;
+    }
+
+    .container .left menu {
+        position: absolute;
+        width: 100%;
+        display: none;
+
+        text-align: left;
+        background: #1E1E1E;
+        border-bottom: 1px solid #3683D3;
+    }
+
+    .container .left menu .menu {
+        padding: 0 0 20px 20px;
+    }
+
+    .container .content {
+        padding: 0 10px;
+    }
+
+    .container .content h2 {
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .hamburger {
+        top: 28px;
+    }
+
+    .left {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h1 .left, 
+    h1 .content, 
+    h1 .separator {
+        padding: 15px 0 5px 0;
+    }
+
+    .hamburger {
+        top: 15px;
+    }
+
+    .left {
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    body {
+        width: 540px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 890px) {
+    .hamburger {
+        display: none;
+    }
+
+    .left {
+        width: 260px;
     }
 
     .content {
@@ -57,21 +158,25 @@ div.separator {
     div.content {
         padding-left: 22px;
     }
+
+    .container .left menu {
+        display: block !important;
+    }
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 990px) {
     .content {
         width: 690px;
     }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1090px) {
     .content {
         width: 790px;
     }
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1200px) {
     .content {
         width: 900px;
     }
@@ -122,7 +227,6 @@ article h2 {
     color: #3F3F46;
     font-size: 35px;
     font-weight: normal;
-    text-transform: uppercase;
 }
 
 article h3 {
