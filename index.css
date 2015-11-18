@@ -1,6 +1,7 @@
 /* ----- LAYOUT -------------------------------------------------------------------------------- */
 
 .clear {
+    display: block;
     clear: both;
 }
 
@@ -15,6 +16,7 @@ body {
 h1 {
     margin: 0;
     text-transform: uppercase;
+    float: left;
 
     color: #3F3F46;
     font-size: 65px;
