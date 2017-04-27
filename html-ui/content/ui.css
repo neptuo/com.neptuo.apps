@@ -23,7 +23,7 @@ i {
 	width: 20px; height: 24px; vertical-align: sub; display: inline-block;
 }
 i.error {
-	background: url("../images/exclamation.png") no-repeat center;
+	background: url("../Images/exclamation.png") no-repeat center;
 }
 .textbox i.error::after {
 	background: rgb(217, 78, 55); padding: 4px; border-radius: 3px; top: 20px; color: white; line-height: 1.4; font-size: 12px; font-style: normal; font-weight: bold; display: none; white-space: nowrap; position: absolute; z-index: 1030; min-width: 120px; content: attr(data-error);
@@ -35,7 +35,7 @@ i.error:hover::after {
 	display: block; opacity: 1;
 }
 .textbox i.datetime {
-	background: url("../images/date-trigger.png") no-repeat -4px; cursor: pointer;
+	background: url("../Images/date-trigger.png") no-repeat -4px; cursor: pointer;
 }
 .nav-tabs {
 	background: rgb(245, 245, 245); padding: 5px 10px 0px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
