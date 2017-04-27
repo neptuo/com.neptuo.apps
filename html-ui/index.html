@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>HTML UI</title>
+</head>
+<body>
+
+<link href="/content/bootstrap.css" rel="stylesheet" />
+<link href="/content/ui.css" rel="stylesheet" />
+<script src="/Scripts/jquery-1.9.1.js"></script>
+<script src="/Scripts/bootstrap.js"></script>
+
+<div class="container">
+    <div class="panel panel-window" draggable="true">
+        <div class="panel-heading">
+            Html UI
+            <button type="button" class="close" data-dismiss="panel">×</button>
+        </div>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages
+                <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">Action</a></li>
+                    <li><a tabindex="-1" href="#">Another action</a></li>
+                    <li><a tabindex="-1" href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form>
+
+            <div class="textbox textbox-error">
+                <input type="text" placeholder="Date from" />
+                <div class="icons">
+                    <i class="error" data-error="Invalid value! Please fill it correctly."></i>
+                    <i class="datetime"></i>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+
+
+            <div class="clear"></div>
+            <hr />
+
+            <div>
+                <div class="textbox">
+                    <input type="text" />
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div>
+                <div class="textbox textbox-error">
+                    <input type="text" />
+                    <div class="icons">
+                        <i class="error" data-error="Invalid value! Please fill it correctly."></i>
+                        <i class="datetime"></i>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div>
+                <div class="textbox">
+                    <input type="text" />
+                    <div class="icons">
+                        <i class="datetime"></i>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+
+        </form>
+        <div class="panel-footer">
+            Panel footer
+        
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
