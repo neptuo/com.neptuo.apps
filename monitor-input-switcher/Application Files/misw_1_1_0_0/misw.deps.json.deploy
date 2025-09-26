@@ -1,0 +1,68 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "misw/1.0.0": {
+        "dependencies": {
+          "MonitorInputSwitcher": "1.0.0",
+          "Neptuo": "6.0.1",
+          "Neptuo.Windows.Hotkeys": "2.0.0"
+        },
+        "runtime": {
+          "misw.dll": {}
+        }
+      },
+      "Neptuo/6.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Neptuo.dll": {
+            "assemblyVersion": "6.0.1.0",
+            "fileVersion": "6.0.1.0"
+          }
+        }
+      },
+      "Neptuo.Windows.Hotkeys/2.0.0": {
+        "runtime": {
+          "lib/net461/Neptuo.Windows.Hotkeys.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "MonitorInputSwitcher/1.0.0": {
+        "runtime": {
+          "MonitorInputSwitcher.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "misw/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Neptuo/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AkJCeoPhRhwyNFJoTEs73ucnWzjquhAPTQRwJ8pD/Rz/91vXK/Gnpbt+e0Kr7URCXHf3RtH0drRgmm5dbqVhWA==",
+      "path": "neptuo/6.0.1",
+      "hashPath": "neptuo.6.0.1.nupkg.sha512"
+    },
+    "Neptuo.Windows.Hotkeys/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MtbjBD94J0H5GkK1QhuAzfeU8eME2r7EH0uIJ+7AEZUxHHuVnQfWy4KyOW4SKWfeXIybrrYZj20hPEsiGAm5ag==",
+      "path": "neptuo.windows.hotkeys/2.0.0",
+      "hashPath": "neptuo.windows.hotkeys.2.0.0.nupkg.sha512"
+    },
+    "MonitorInputSwitcher/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

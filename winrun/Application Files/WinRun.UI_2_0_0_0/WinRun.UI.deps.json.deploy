@@ -1,0 +1,114 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "WinRun.UI/2.0.0.0": {
+        "dependencies": {
+          "FontAwesome.WPF": "4.7.0.9",
+          "Neptuo": "6.0.2",
+          "Neptuo.Observables": "2.1.1",
+          "Neptuo.Windows.Hotkeys": "2.0.0",
+          "Neptuo.Windows.Threading": "1.0.1"
+        },
+        "runtime": {
+          "WinRun.UI.dll": {}
+        }
+      },
+      "FontAwesome.WPF/4.7.0.9": {
+        "runtime": {
+          "lib/net40/FontAwesome.WPF.dll": {
+            "assemblyVersion": "4.7.0.37774",
+            "fileVersion": "4.7.0.9"
+          }
+        }
+      },
+      "Neptuo/6.0.2": {
+        "runtime": {
+          "lib/net6.0/Neptuo.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
+          }
+        }
+      },
+      "Neptuo.Observables/2.1.1": {
+        "dependencies": {
+          "Neptuo": "6.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Neptuo.Observables.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Neptuo.Windows.Hotkeys/2.0.0": {
+        "dependencies": {
+          "Neptuo": "6.0.2"
+        },
+        "runtime": {
+          "lib/net461/Neptuo.Windows.Hotkeys.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Neptuo.Windows.Threading/1.0.1": {
+        "dependencies": {
+          "Neptuo": "6.0.2"
+        },
+        "runtime": {
+          "lib/net45/Neptuo.Windows.Threading.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WinRun.UI/2.0.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FontAwesome.WPF/4.7.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SXE080rnyWMm9Dt0BZzMxh89/o9teuSaqL1N+0O/XM/F/HU8JuZA4XaEKxjBigwZPHHU3/udTa0QMYCHkmH43Q==",
+      "path": "fontawesome.wpf/4.7.0.9",
+      "hashPath": "fontawesome.wpf.4.7.0.9.nupkg.sha512"
+    },
+    "Neptuo/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7S12fWQ083etLxY+BUiNZPhnMIHKIU3VSJ3Mx2278oCAs5s9b1M+IsSsgzevzuxfDtpkaP8dRg9U4U0/Q3x8gQ==",
+      "path": "neptuo/6.0.2",
+      "hashPath": "neptuo.6.0.2.nupkg.sha512"
+    },
+    "Neptuo.Observables/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eSS5k9MpSHFtxi4HflFVqrcqjfOu+JUp72/+OBtW/JchW6gV27MLSbzlJkKBdTxFymB7E3bSPjQAaSeOQpo4Kw==",
+      "path": "neptuo.observables/2.1.1",
+      "hashPath": "neptuo.observables.2.1.1.nupkg.sha512"
+    },
+    "Neptuo.Windows.Hotkeys/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MtbjBD94J0H5GkK1QhuAzfeU8eME2r7EH0uIJ+7AEZUxHHuVnQfWy4KyOW4SKWfeXIybrrYZj20hPEsiGAm5ag==",
+      "path": "neptuo.windows.hotkeys/2.0.0",
+      "hashPath": "neptuo.windows.hotkeys.2.0.0.nupkg.sha512"
+    },
+    "Neptuo.Windows.Threading/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I4iiOmSiUuQzOWfalGNU7btja0JqcJxH4/P0VbIKyAyigPta804Tqw1a8Hh+WZx5h4yhQHDZnyHrAMQrMayAgw==",
+      "path": "neptuo.windows.threading/1.0.1",
+      "hashPath": "neptuo.windows.threading.1.0.1.nupkg.sha512"
+    }
+  }
+}
